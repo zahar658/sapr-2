@@ -31,13 +31,12 @@ p{
     line-height: 24px;
 }
 
-h3{
-
-}
-
 ul{
     list-style-type: none;
 }
+
+
+
 /* header */
 .link_headr{
     text-decoration: none; 
@@ -72,13 +71,7 @@ ul{
     padding-left: 0px;
 }
 
-.subheadings{
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: left;
-    margin: 0px;
-    margin-bottom: 100px;
-}
+
 
 .p_left{
     text-align: left;
@@ -100,7 +93,9 @@ ul{
     text-align: center;
     max-width: 173px ;
     color: var(--heding-list-color);
-    
+    font-size: 1.8rem;
+    font-weight: 700;
+
 }
 
 .border_apps_list{
@@ -216,10 +211,47 @@ ul{
 }
 
 .list_roadmap{
+    
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
 }
+
+.card{
+    margin: auto;
+    margin-top: 40px;
+    width: 288px;
+}
+
+.card_img{
+
+    width: 288px;
+    height: 120px;
+
+}
+
+.card_button{
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+    background-color:  #1B2A40;
+}
+
+.card_subheadings{
+
+    margin: 0px;
+    color: var(--heding-list-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 20px;
+    
+}
+
+.card_text{
+    width: 248px;
+    margin-left: 20px;    
+}
+   
 
 .link_rodmap_start{
     background-color: var(--heding-list-color);
@@ -244,8 +276,9 @@ ul{
 }
 
 .link_rodmap{
-    background-color: var(--heding-list-color);
-    color: var(--background-color);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);  
+    color: white;
     text-decoration: none; 
     
     padding: 0.8rem 2.8rem;
@@ -324,6 +357,8 @@ ul{
 
 
 .heading{
+    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+
     font-size: 2.8rem;
     font-weight: 700;
     text-align: center;
@@ -336,13 +371,7 @@ section{
     text-align: center;
 }
 
-.for_creators{
-    
 
-}
-.table{
-
-}
 
 .footer{
     color: #000000;
@@ -351,13 +380,7 @@ section{
     padding: 1.93rem 1.6rem 2.4rem 1.65rem;
 }
 
-.footer_top_list{
-    f;
-}
 
-.footer_top{
-
-}
 
 .footer_top_link{
     color: var(--text-color2);
