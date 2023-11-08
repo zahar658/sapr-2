@@ -148,7 +148,7 @@ h4{
 }
 
 .wrapper_table{
-    max-width: 300px;
+    
 }
 
 .border_table{
@@ -157,6 +157,9 @@ h4{
     border: 3px solid #FFD12F;
     background: rgba(255, 255, 255, 0.02);
     min-width: 288px;
+    margin: 0 auto;
+    width: 290px;
+    margin-bottom: 80px;
     
 }
 
