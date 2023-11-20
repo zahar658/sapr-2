@@ -1,0 +1,16 @@
+<svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon_feature_1">
+<path id="Union" d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z" fill="url(#paint0_linear_6288_9284)"/>
+<path id="Union_2" opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M40 20C45.5228 20 50 15.5228 50 10C50 4.47715 45.5228 0 40 0C34.4772 0 30 4.47715 30 10C30 15.5228 34.4772 20 40 20ZM70 20C75.5228 20 80 15.5228 80 10C80 4.47715 75.5228 0 70 0C64.4772 0 60 4.47715 60 10C60 15.5228 64.4772 20 70 20Z" fill="url(#paint1_linear_6288_9284)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_6288_9284" x1="5.20833" y1="-3.10441e-09" x2="13.9583" y2="20" gradientUnits="userSpaceOnUse">
+<stop stop-color="#68C0FF"/>
+<stop offset="1" stop-color="#207ACC"/>
+</linearGradient>
+<linearGradient id="paint1_linear_6288_9284" x1="43.0208" y1="-3.10441e-09" x2="47.0668" y2="23.1201" gradientUnits="userSpaceOnUse">
+<stop stop-color="#68C0FF"/>
+<stop offset="1" stop-color="#207ACC"/>
+</linearGradient>
+</defs>
+</svg>
