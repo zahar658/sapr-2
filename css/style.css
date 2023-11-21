@@ -1,6 +1,6 @@
 :root{
     font-size: 62.5%;
-    --background-color: #000000;
+    --background-color: #10151A;
     --text--color: #FFFFFF;
     --heding-list-color: #FFD600;
    
@@ -10,6 +10,9 @@ body{
     font-family: 'PT Mono', monospace;
     background-color: var(--background-color);
     color: var(--text--color);
+    background-repeat: no-repeat;
+    background-image: url(../img/BG\ Stars.png);
+    background-size: 1080px 500px;
    
 }
 
@@ -1002,6 +1005,11 @@ section{
 
 
   @media screen and (min-width: 1140px){
+
+    body{
+        background-repeat: no-repeat;
+        background-image: url(../img/BG\ Stars.png);
+    }
     /*header*/
     .header_wrapper{
         
@@ -1038,14 +1046,15 @@ section{
     }
     /*main*/
     /* selector_1*/
+ 
+
+    .wrapper{
+        max-width: 1138px;;
+    }
     .wrapper_first{
         max-width: 910px;
         margin-top: 160px;
         margin-bottom: 200px;
-    }
-
-    .wrapper{
-        max-width: 766px;;
     }
 
     .heading-main{
@@ -1055,16 +1064,20 @@ section{
         margin-bottom: 30px;
 
         background-size: 223px 34px;
-        background-position: bottom 0px right 250px;
+        background-position: bottom 0px right 251px;
     }
 
     .p_hero{
-        padding: 0px 200px;
+        padding: 0px 75px;
         margin-bottom: 80px;
+        font-size: 24px;
+        line-height: 40px;
     }
     .link_start{
         padding: 16px 40px;
         border-radius: 16px;
+        font-size: 20px;
+        line-height: 36px;
     }
         /* selector_2*/
     .heading_main_subheadings{
@@ -1072,11 +1085,13 @@ section{
         font-weight: 700;
         line-height: 92px;
         background-size: 773px 30px;
-        background-position: bottom 15px right 90px;
+        background-position: bottom 15px right 180px;
     }
 
     .for_creators{
         display: flex;
+        width: 800px;
+        margin: 0 auto;
     }
     .img_second{
         width: 96px;
@@ -1088,7 +1103,8 @@ section{
 
     /*selector_3*/
     .border_table{
-        width: 1064px;
+        width: 900px;
+        padding: 80px;
     }
 
     .img_table{
@@ -1100,7 +1116,10 @@ section{
         font-size: 28px;
         line-height: 36px;
     }
-
+    .list_table_up{
+        width: 701px;
+        margin: 0 auto;
+    }
     .listpoint_table_up{
         padding: 8px 20px 8px 8px;
         border-radius: 12px;
@@ -1109,12 +1128,92 @@ section{
         gap: 12px;
     }
 
+    .card_table_{
+        width: 781px;
+        margin: 0 auto;
+    }
+
+    .card_table_second{
+        margin-right: 42px;
+    }
+
+    .card_table{
+        border-radius: 16px;
+        padding: 36px 24px;
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+    }
+    /*selector_4*/
+    .wrapper_roadmap{
+        max-width: 1000px;
+        padding: 52px 70px 70px 70px;
+        margin-bottom: 160px;
+
+    }
+    
+    .links_roadmap{
+           display: flex;
+    }
+    
+    .link_rodmap_start{
+        padding: 16px 40px;
+        font-size: 20px;
+        line-height: 36px;
+        margin: 0;
+        margin-right: 28px;
+    }
+    
+    .link_rodmap{
+        border-radius: 16px;
+        padding: 12px 34px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    
+    .heading_roadmap{
+        font-size: 40px;
+        line-height: 72px;
+    }
+    
+    .text_roadmap{
+        font-size: 20px;
+        line-height: 36px;
+        width: 700px;
+    }
+    
+    .list_roadmap{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /*selector_5*/
+
+    .wrapper_card{
+        display: flex;
+    }
+    .card_img{
+        width: 350px;
+        
+    }
+    .card{
+        width: 350px;
+    }
+    .card_subheadings{
+        font-size: 15px;
+        line-height: 36px;
+    }
+    .card_text{
+        font-size: 20px;
+        line-height: 32px;
+        height: 70px;
+    }
     /*selector_6*/
     
     .heading{
         font-size: 48px;
         line-height: 92px;
-        background-position: bottom 10px right 308px;
+        background-position: bottom 10px right 396px;
         background-size: 337px 29px;
     }
 
