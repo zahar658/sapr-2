@@ -292,10 +292,15 @@ display: block;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.10);
     margin-bottom: 16px;
+    
 }
 
 .list_table_down{
-    margin-left: px;
+
+}
+
+.list_table_down_ferst{
+    margin-right: 10px;
 }
 
 .list_table_down_wrapper{
@@ -304,6 +309,8 @@ display: block;
     background: rgba(255, 255, 255, 0.10);
     padding: 8px 20px 8px 44px;
     margin-bottom: 16px;
+    width: 80px;
+    height: 40px;
 }
 
 .listpoint_table_down{
@@ -745,7 +752,7 @@ section{
         margin-bottom: 30px;
 
         background-size: 162px 23px;
-        background-position: bottom 0px right 200px;
+        background-position: bottom 0px right 216px;
     }
 
     .p_hero{
@@ -762,7 +769,7 @@ section{
         font-weight: 700;
         line-height: 52px;
         background-size: 644px 25px;
-        background-position: bottom 0px right 25px;
+        background-position: bottom 0px right 54px;
     }
 
     .for_creators{
@@ -833,6 +840,7 @@ section{
 
     .card_table_{
         display: flex;
+        margin-bottom: 30px;
     }
 
     .card_table{
@@ -840,6 +848,7 @@ section{
         padding: 36px 24px;
         font-size: 16px;
         line-height: 28px;
+        width: 100%;
     }
 
     .card_table_second{
@@ -865,6 +874,8 @@ section{
 
     .list_table_down{
         display: flex;
+        justify-content: center;
+        margin-right: 0;
     }
 
     .list_table_down_wrapper{
@@ -872,6 +883,9 @@ section{
         border-radius: 12px;
         font-size: 14px;
         line-height: 24px;
+        margin-right: 20px;
+        width: 112px;
+        height: 32px;
     }
     /*selector_4*/
 
