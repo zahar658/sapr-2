@@ -461,7 +461,7 @@ display: block;
    
 .list_up_backed{
 
-    width: 325px;
+    width: 307px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -475,7 +475,7 @@ display: block;
 }
 
 .list_down_backed_li{
-    padding: 8px 20px;
+    padding: 8px 15px;
     border-radius: 12px;
     border: 2px solid rgba(255, 255, 255, 0.15);
     margin-right: 12px;
@@ -1081,7 +1081,7 @@ section{
     }
         /* selector_2*/
     .heading_main_subheadings{
-        font-size: 48px;
+        fongt-size: 48px;
         font-weight: 700;
         line-height: 92px;
         background-size: 773px 30px;
