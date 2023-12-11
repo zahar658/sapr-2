@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style_fotm.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper flex">
+            <a href="index.html" class="link_headr"><img style = "margin-right:8px;" src="img\Logo.svg" alt="" class="pop" >  Superdao</a>
+            <div class="nav">
+                <div class="nav_a">
+                    <a href="#Roadmap_club" class="nav_a_item">Roadmap club</a>
+                    <a href="" class="nav_a_item">About</a>
+                    <a href="" class="nav_a_item">Jobs</a>
+                </div>
+                <div class="nav_button">
+                    <img src="img/icons8-twitter 1.svg" alt="">
+                    <a href="" class="nav_button_item">Twitter</a>
+                </div>
+            </div>
+            <button class="button_header"><img src="img/Shape.svg" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <form action="//httpbin.org/post" method="post">
+            <h1 class="header_form">Форма</h1>
+            <div class="card_form">
+                <fieldset class="card_form_item ferst_card">
+                    <p class="header_text_card" >Личная информация</p>
+                    <div class="inp">
+                        <label>
+                            <p class="header_text_card">Имя*</p>
+                            <input type="text" name="name_1" placeholder="Иван" required>
+                        </label>
+                    </div>
+                    <div class="inp">
+                        <label>
+                            <p class="header_text_card">Дата рождения</p>
+                            <input max="2023-01-01" type="date" name="date">
+                        </label>
+                    </div>
+                    <div class="inp">
+                        <p class="header_text_card">Пол*</p>
+                        <div class="floor">
+                            <input type="radio" name="size" id="man" required>
+                            <label class="gender" for="man">Мужской</label>
+                            <input type="radio" name="size" id="woman" required>
+                            <label class="gender" for="woman">Женский</label>
+                        </div>
+                    </div>
+                    <div class="inp" style="margin-top: 30px;">
+                        <label>
+                            <p class="header_text_card">Пароль*</p>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="card_form_item second">
+                    <p class="header_text_card" >Контактная информация</p>
+                    <legend>Контактная информация</legend>
+                    <div class="inp">
+                        <label>
+                            <p class="header_text_card">Email*</p>
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                        </label>
+                    </div>
+                    <div class="inp">
+                        <label>
+                            <p class="header_text_card">Номер</p>
+                            <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="card_form_item free">
+                    <p class="header_text_card" >Время для связи*</p>
+                    <legend>Время для связи*</legend>
+                    <div class="select-wrapper">
+                        <select name="select-ccategory" id="" class="select">
+                            <option value="1">Утро (8:00-12:00)</option>
+                            <option value="2">Обед (12:00-15:00)</option>
+                            <option value="3">Вечер (15:00-18:00)</option>
+                            <option value="4">Ночь (18:00-21:00)</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="reset" class="button-1"><p class="text-button1">Сбросить</p></button>
+                <button type="submit" class="button-2"><p class="text-button2">Отправить</p></button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_top">
+                <a class="footer_top_link" href=""><img class="footer-top-logo" src="img/Logo_black.svg" alt=""> Superdao</a>
+                <ul class="footer_top_list">
+                    <li class="footer_top_list_item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="img/Icon_twitter.svg" alt=""></a></li>
+                    <li class="footer_top_list_item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="img/Icon_telegram.svg" alt=""></a></li>
+                    <li class="footer_top_list_item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="img/Icon_email.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <ul class="footer_bottom">
+                <li class="footer_bottom_item"><a class="footer-bottom-link a" href="lol.html">Roadmap club</a></li>
+                <li class="footer_bottom_item"><a class="footer-bottom-link a" href="">About</a></li>
+                <li class="footer_bottom_item"><a class="footer-bottom-link a" href="">Jobs</a></li>
+            </ul>
+            <a href="grid.html" style="    margin: 5px auto; display: block; width: 50px;">Grid</a>
+        </div>
+        <div class="footer_wrapper_second">
+            <div class="footer_wrapper_secondd">
+                <img class="footer_top_logo" src="img/Logo_black.svg" alt="">
+                <ul class="footer_bottom">
+                    <li class="footer_bottom_item"><a class="footer-bottom-link a" href="#Roadmap_club">Roadmap club</a></li>
+                    <li class="footer_bottom_item"><a class="footer-bottom-link a" href="">About</a></li>
+                    <li class="footer_bottom_item" style="margin: 0;"><a class="footer-bottom-link a" href="">Jobs</a></li>
+                </ul>
+                <ul class="footer_top_list">
+                    <li class="footer_top_list_item"><a class="footer-top-list-item-link" href=""><img class="footer_top_item_link_icon" src="img/Icon_twitter.svg" alt=""></a></li>
+                    <li class="footer_top_list_item"><a class="footer-top-list-item-link" href=""><img class="footer_top_item_link_icon" src="img/Icon_telegram.svg" alt=""></a></li>
+                    <li class="footer_top_list_item" style="margin: 0;"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="img/Icon_email.svg" alt=""></a></li>
+                </ul>
+
+            </div>
+            <a class="grid" href="grid.html">Grid</a>
+        </div>
+        
+    </footer>
+</body>
+</html>
