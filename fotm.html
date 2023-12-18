@@ -34,30 +34,31 @@
             <div class="card_form">
                 <fieldset class="card_form_item ferst_card">
                     <p class="header_text_card" >Личная информация</p>
+                    <legend>Личная информация</legend>
                     <div class="inp">
                         <label>
-                            <p class="header_text_card">Имя*</p>
+                            <span class="header_text_card">Имя*</span>
                             <input type="text" name="name_1" placeholder="Иван" required>
                         </label>
                     </div>
                     <div class="inp">
                         <label>
-                            <p class="header_text_card">Дата рождения</p>
-                            <input max="2023-01-01" type="date" name="date">
+                            <span class="header_text_card">Дата рождения</span>
+                            <input max="2024-01-01" type="date" name="date" placeholder="13-10-2023">
                         </label>
                     </div>
                     <div class="inp">
-                        <p class="header_text_card">Пол*</p>
+                        <span class="header_text_card">Пол*</span>
                         <div class="floor">
-                            <input type="radio" name="size" id="man" required>
-                            <label class="gender" for="man">Мужской</label>
+                            <input type="radio" name="size" id="man" required >
+                            <label class="gender" for="man" style="margin-left: 30px;">Мужской</label>
                             <input type="radio" name="size" id="woman" required>
                             <label class="gender" for="woman">Женский</label>
                         </div>
                     </div>
                     <div class="inp" style="margin-top: 30px;">
                         <label>
-                            <p class="header_text_card">Пароль*</p>
+                            <span class="header_text_card">Пароль*</span>
                             <input type="password" name="password" placeholder="Password" required>
                         </label>
                     </div>
@@ -67,19 +68,19 @@
                     <legend>Контактная информация</legend>
                     <div class="inp">
                         <label>
-                            <p class="header_text_card">Email*</p>
+                            <span class="header_text_card">Email*</span>
                             <input type="email" name="email" placeholder="example@gmail.com" required>
                         </label>
                     </div>
                     <div class="inp">
                         <label>
-                            <p class="header_text_card">Номер</p>
+                            <span class="header_text_card">Номер</span>
                             <input type="tel" name="number" placeholder="+7 (___) ___-____.">
                         </label>
                     </div>
                 </fieldset>
                 <fieldset class="card_form_item free">
-                    <p class="header_text_card" >Время для связи*</p>
+                    <span class="header_text_card" >Время для связи*</span>
                     <legend>Время для связи*</legend>
                     <div class="select-wrapper">
                         <select name="select-ccategory" id="" class="select">

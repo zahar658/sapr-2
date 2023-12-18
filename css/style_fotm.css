@@ -8,6 +8,7 @@
 }
 
 
+
 body{
     font-family: 'PT Mono', monospace;
     background-color: var(--background-color);
@@ -18,7 +19,9 @@ body{
    
 }
 
-
+::placeholder{
+    color: grey;
+}
 
 footer{
     background-color: var(--heding-list-color);
@@ -36,7 +39,7 @@ a{
 p{
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
     margin: 0;
 }
 
@@ -48,7 +51,7 @@ ul{
 h1{
     font-size: 35   px;
     font-weight: 700;
-    line-height: 49px;
+    line-height: 4.9rem;
 }
 h2{
     margin: 0;
@@ -64,10 +67,10 @@ input {
     font-size: 1.7rem;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #444;
+    border-bottom: 0.1rem solid #444;
     width: 95%;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 3rem;
+    margin-left: 1rem;
 }
 input[name="email"]::-webkit-input-placeholder {
     color: var(--gray-color);
@@ -91,7 +94,7 @@ input[name="email"]::-webkit-input-placeholder {
 
 .card_form{
     margin: 0 auto;
-    width: 500px;
+    width: 50rem;
 }
 .card_form_item{
     width: 100px;
@@ -140,6 +143,7 @@ input[name="email"]::-webkit-input-placeholder {
 .nav_a_item{
     margin-right: 40px;
 }
+
 .nav_button{
     display: flex;
     padding: 4px 16px 4px 16px;
@@ -166,13 +170,32 @@ input[name="email"]::-webkit-input-placeholder {
     display: flex;
 }
 .gender{
-    margin-right: 40px;
+    color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 20px;
+    border: 2px solid grey;
     border-radius: 10px;
+    padding: 15px 30px 15px 20px;
     font-size: 1.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + .gender{
+    background-color: grey;
+    color: white;
+}
+
+input[type="radio"]:checked + .gender:before{
+    height: 20px;
+    width: 20px;
+    border: 4px solid white;
+    background-color: gray;
 }
 
 .gender:before{
@@ -180,7 +203,7 @@ input[name="email"]::-webkit-input-placeholder {
     content: "";
     height: 20px;
     width: 20px;
-    border: 3px solid var(--light-blue-color);
+    border: 3px solid grey;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -188,19 +211,18 @@ input[name="email"]::-webkit-input-placeholder {
     max-width: 1140px;
 }
 /*size_text-img*/
-.footer_top_logo
+.footer-top-logo
 {
     width: 56px;
     height: 56px;
+    transform: rotate(30deg) scale(1.5) skew(20deg,20deg);
 }
 .footer_bottom_item{
     color: #000000;
     font-size: 20px;
     line-height: 36px; 
 }
-.grid{
-    color: #000000;
-}
+
 .footer_top_item_link_icon{
     width: 32px;
     height: 32px;
@@ -255,8 +277,7 @@ input[name="email"]::-webkit-input-placeholder {
     opacity: 0.7;
     /* margin: 1.89rem; */
   } 
-@media screen and (min-width: 768px){
-    /*header*/
+
     .header_wrapper{
         max-width: 736px;
         padding: 20px 20px 0px 20px;
@@ -277,9 +298,7 @@ input[name="email"]::-webkit-input-placeholder {
     .button_header{
         display: none;
     }
-}
 
-@media screen and (min-width: 1140px){
 
     body{
         background-repeat: no-repeat;
@@ -404,4 +423,3 @@ input[name="email"]::-webkit-input-placeholder {
     .ferst_card{
         grid-area: 1 / 1 / 3 / -2;
     }
-}

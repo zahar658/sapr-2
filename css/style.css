@@ -12,7 +12,7 @@ body{
     color: var(--text--color);
     background-repeat: no-repeat;
     background-image: url(../img/BG\ Stars.png);
-    background-size: 1080px 500px;
+    background-size: 108rem 50rem;
    
 }
 
@@ -26,7 +26,9 @@ footer{
 a{
     text-decoration: none;
     color:var(--text-color);
-
+    background: none;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     
 
 }
@@ -34,7 +36,7 @@ a{
 p{
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
     margin: 0;
 }
 
@@ -57,9 +59,9 @@ h4{
 
 /* header */
 .header_wrapper{
-    max-width: 288px;
+    max-width: 28.8rem;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 .nav{
@@ -71,25 +73,98 @@ h4{
 }
 
 .nav_a{
-    margin-left: 90px;
-    font-size: 16px;
-    line-height: 28px;
+    margin-left: 9rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
 
 }
 
 .nav_a_item{
-    margin-right: 40px;
+    margin-right: 4rem;
 }
+::selection {
+    color: grey; /* Цвет текста */
+    background: whitesmoke; /* Цвет фона */
+}
+a:hover{
+    color: red;
+    transition: 0.5s;
+    background-color: pink;
+}
+a:active{
+    color: brown;
+}
+.business{
+    opacity: 0;
+    animation: ani 7s forwards;
+    
+}
+.uslugi{
+    position: relative;
+    display: block;
+}
+.list_p li:nth-child(even){
+    color:red;
+}
+
+@keyframes ani {
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  } 
+
+  .loader {
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 0.5rem solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 48%;
+    animation: rotation 6s;
+
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+        
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+
+    }
+    } 
+    .loader::before{
+        animation: ani2 2s;
+         
+    }
+    
+
+
+  @keyframes ani2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  } 
+
+
+
+
 
 .nav_button{
     display: flex;
-    padding: 4px 16px 4px 16px;
+    padding: 0.4rem 1.6rem 0.4rem 1.6rem;
     align-items: center;
-    gap: 8px;
-    border-radius: 8px;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
     background: #262E37;
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
 }
 .nav_button_item{
 
@@ -102,9 +177,9 @@ h4{
 
 .link_headr{
     text-decoration: none; 
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 3.4rem;
     display: flex;
     align-items: center;
 
@@ -112,7 +187,7 @@ h4{
 }
 
 .button_header{
-    margin-right: 0px;
+    margin-right: 0rem;
     background-color: #000000;
 }
 
@@ -123,49 +198,49 @@ h4{
 
 .wrapper {
     margin: 0 auto;
-    margin-bottom: 80px;
-    max-width: 288px;
+    margin-bottom: 8rem;
+    max-width: 28.8rem;
 }
 
 .wrapper_first{
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .heading-main {
     text-align:center;
     font-size: 3.2rem;
     font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 16px;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
     background-image: url(../img/Underline_1.png);
     background-repeat: no-repeat;   
-    background-position: bottom 0px right 50px;
-    background-size: 101px 15px;
+    background-position: bottom 0rem right 5rem;
+    background-size: 10.1rem 1.5rem;
 }
 
 .p_hero{
     color: var(--text--color);
 
     text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 15px;
+    text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 160% */
+    line-height: 2.4rem; /* 160% */
     opacity: 0.8;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 .heading_main_subheadings{
     text-align:center;
     font-size: 3.2rem;
     font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 16px;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
     background-image: url(../img/Underline_2.png);
     background-repeat: no-repeat; 
-    background-size: 140px 19px;  
-    background-position: bottom 0px right 70px;
+    background-size: 14rem 1.9rem;  
+    background-position: bottom 0rem right 7rem;
 }
 
 .for_creators{
@@ -176,7 +251,7 @@ display: block;
     display: none;
 }
 .padding_left{
-    padding-left: 0px;
+    padding-left: 0rem;
 }
 
 .subheadings{
@@ -188,14 +263,14 @@ display: block;
     color: var(--heding-list-color);
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 
 }
 
 
 .p_left{
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 }
 
 .wrapper_table{
@@ -203,30 +278,30 @@ display: block;
 }
 
 .border_table{
-    padding: 20px 16px 20px 16px;
-    border-radius: 16px;
-    border: 3px solid #FFD12F;
+    padding: 2rem 1.6rem 2rem 1.6rem;
+    border-radius: 1.6rem;
+    border: 0.3rem solid #FFD12F;
     background: rgba(255, 255, 255, 0.02);
-    min-width: 288px;
+    min-width: 28.8rem;
     margin: 0 auto;
-    width: 290px;
-    margin-bottom: 80px;
+    width: 29rem;
+    margin-bottom: 8rem;
     
 }
 
 .heading_table{
     display: flex;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     align-items: center;
 }
 
 .heading_table_first{
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 24px;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
 }
 
 .heading_table_first_string{
@@ -238,9 +313,9 @@ display: block;
 
 .img_table{
     list-style-image: url(../img/Icon_wing.svg);
-    margin-right: 4px;
-    width: 16px;
-    height: 16px;
+    margin-right: 0.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 .heading_table_text{
@@ -263,17 +338,17 @@ display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 .listpoint_table_up{
-    border-radius: 4px;
+    border-radius: 0.4rem;
     background: rgba(255, 255, 255, 0.10);
-    padding: 2px 6px 2px 0px;
+    padding: 0.2rem 0.6rem 0.2rem 0rem;
     display: flex;
     align-items: center;
-    margin-right: 8px;
-    margin-bottom: 8px;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .icon_second{
@@ -285,16 +360,16 @@ display: block;
 }
 
 .listpoint_table_up_rigt{
-    margin-right: 3px;
+    margin-right: 0.3rem;
 }
 
 .card_table{
     
-    padding: 12px 16px;
+    padding: 1.2rem 1.6rem;
 
-    border-radius: 16px;
+    border-radius: 1.6rem;
     background: rgba(255, 255, 255, 0.10);
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     
 }
 
@@ -303,17 +378,17 @@ display: block;
 }
 
 .list_table_down_ferst{
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .list_table_down_wrapper{
     display: flex;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.10);
-    padding: 8px 20px 8px 44px;
-    margin-bottom: 16px;
-    width: 80px;
-    height: 40px;
+    padding: 0.8rem 2rem 0.8rem 4.4rem;
+    margin-bottom: 1.6rem;
+    width: 8rem;
+    height: 4rem;
 }
 
 .listpoint_table_down{
@@ -327,87 +402,87 @@ display: block;
     align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
-    margin-right: 8px;
-    width: 270px;
+    margin-right: 0.8rem;
+    width: 27rem;
     padding: 0;
-    margin-right: 8px;
-    margin-top: 9px;
+    margin-right: 0.8rem;
+    margin-top: 0.9rem;
     
 }
 .headinglist-big{
     display: flex;
-    width: 229px;
-    height: 100px;
-    padding: 12px 16px;
+    width: 22.9rem;
+    height: 10rem;
+    padding: 1.2rem 1.6rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 0.4rem;
     flex-shrink: 0;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     background: rgba(255, 255, 255, 0.10);
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 1.6rem;
 }
 
 .headinglist:nth-child(1){
-    width: 83px;
+    width: 8.3rem;
 }
 .headinglist:nth-child(2){
-    width: 91px;
+    width: 9.1rem;
 }
 .headinglist:nth-child(3){
-    width: 66px;
+    width: 6.6rem;
 }
 .headinglist:nth-child(4){
-    width: 102px;
+    width: 10.2rem;
 }
 .headinglist:nth-child(5){
-    width: 150px;
+    width: 15rem;
 }
 .headinglist:nth-child(6){
-    width: 83px;
-    margin-left: 46px;
+    width: 8.3rem;
+    margin-left: 4.6rem;
 }
 .headinglist:nth-child(7){
-    width: 77px;
+    width: 7.7rem;
 }
 
 .headinglist{
     flex-shrink: 0;
     background: rgba(255, 255, 255, 0.10);
     margin-right: 0.8rem;
-    height: 24px;
+    height: 2.4rem;
     display: flex;  
     align-items: center;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     border-radius: 0.4rem;
     padding: 0;
-    margin-right:8px;
-    margin-top: 9px;
+    margin-right:0.8rem;
+    margin-top: 0.9rem;
 
 }
 
 .headinglist-bottom{
-    width: 80px;
-    height: 30px;
+    width: 0.8rem;
+    height: 0.3rem;
     display: inline-flex;
-    padding: 8px 34px 8px 8px;
+    padding: 0.8rem 3.4rem 0.8rem 0.8rem;
     align-items: center;
-    gap: 8px;
-    border-radius: 12px;
+    gap: 0.8rem;
+    border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.10);
     margin: 0 auto;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 .border_blockch_list{
     margin: auto;
-    padding: 0px;
+    padding: 0rem;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 16px;
+    margin-top: 1.6rem;
 }
 
 
@@ -418,21 +493,21 @@ display: block;
 
 .card{
     margin: auto;
-    margin-top: 40px;
-    width: 288px;
-    border-radius: 20px;
+    margin-top: 4rem;
+    width: 28.8rem;
+    border-radius: 2rem;
     overflow: hidden;
 }
 
 .card_img{
 
-    width: 288px;
-    height: 120px;
+    width: 28.8rem;
+    height: 12rem;
 
 }
 
 .card_button{
-    padding: 20px;
+    padding: 2rem;
     text-align: left;
     
     background-color:  #1B2A40;
@@ -440,7 +515,7 @@ display: block;
 
 .card_subheadings{
 
-    margin-bottom: 4px;
+    margin-bottom: 0.4rem;
     color: var(--heding-list-color);
     font-size: 1.8rem;
     font-weight: 700;
@@ -449,7 +524,7 @@ display: block;
 }
 
 .card_text{
-    width: 248px;
+    width: 24.8rem;
     width: 100%;
        
 }
@@ -461,34 +536,34 @@ display: block;
    
 .list_up_backed{
 
-    width: 307px;
+    width: 30.7rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 .list_up_backed_li{
-    margin-right: 20px;
-    margin-bottom: 16px;
+    margin-right: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 .list_down_backed_li{
-    padding: 8px 15px;
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    margin-right: 12px;
-    margin-bottom: 12px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.2rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.15);
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .wrapper_roadmap{
     margin: 0 auto;
-    margin-bottom: 80px;
-    padding: 16px;
-    max-width: 288px;
+    margin-bottom: 8rem;
+    padding: 1.6rem;
+    max-width: 28.8rem;
     text-align: left;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     background: linear-gradient(123deg, #A96BF7 2.02%, #3103B5 101.68%);
     
 }
@@ -498,21 +573,21 @@ display: block;
     font-size: 2.8rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 
 }
 .text_roadmap{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     
 }
 
 
 .list_roadmap{
     list-style-image: url(../img/Icon_wing.svg);
-    margin-left: 16px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 20px;
+    margin-left: 1.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     font-weight: 700;
 }
 
@@ -522,41 +597,41 @@ display: block;
     text-decoration: none; 
     
     padding: 0.8rem 2.8rem;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 9px 44px 0px rgba(255, 214, 0, 0.19);
+    box-shadow: 0rem 0.9rem 4.4rem 0rem rgba(255, 214, 0, 0.19);
 
     display: flex;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 12px;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
 
 }
 
 .link_rodmap{
-    border-radius: 12px;
+    border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.15);  
     color: var(--text--color);
     text-decoration: none; 
     
     padding: 0.8rem 2.8rem;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 9px 44px 0px rgba(255, 214, 0, 0.19);
+    box-shadow: 0rem 0.9rem 4.4rem 0rem rgba(255, 214, 0, 0.19);
 
     display: flex;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 3.2rem;
     
     
 
@@ -571,18 +646,18 @@ display: block;
     text-decoration: none; 
     
     padding: 0.8rem 2.8rem;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 9px 44px 0px rgba(255, 214, 0, 0.19);
+    box-shadow: 0rem 0.9rem 4.4rem 0rem rgba(255, 214, 0, 0.19);
 
 
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 3.2rem;
     
 
 }
@@ -590,11 +665,11 @@ display: block;
 .link_button {
     background-color: var(--heding-list-color);
     display: inline-flex;
-    padding: 8px 28px;
+    padding: 0.8rem 2.8rem;
     justify-content: center;
     align-items: center;  
-    border-radius: 12px;
-    box-shadow: 0px 9px 44px 0px rgba(255, 214, 0, 0.19);
+    border-radius: 1.2rem;
+    box-shadow: 0rem 0.9rem 4.4rem 0rem rgba(255, 214, 0, 0.19);
 }
 
 
@@ -610,7 +685,7 @@ display: block;
 
 
 .heading{
-    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+    text-shadow: 0rem 0.2rem 2.5rem rgba(0, 0, 0, 0.60);
 
     font-size: 2.8rem;
     font-weight: 700;
@@ -619,7 +694,7 @@ display: block;
 
     background-image: url(../img/Underline_3.png);
     background-repeat: no-repeat;   
-    background-position: bottom 0px right 50px;
+    background-position: bottom 0rem right 5rem;
 }
 
 
@@ -635,14 +710,14 @@ section{
 .footer{
     color: #000000;
     flex-shrink: 0;
-    background: linear-gradient(180deg, #FFD600 0%, #FFC700 100%);
+    background: linear-gradient(18deg, #FFD600 0%, #FFC700 100%);
     
 }
 
 .footer_wrapper{
-    padding: 17px 16px 24px 16px;
+    padding: 1.7rem 1.6rem 2.4rem 1.6rem;
     margin: 0 auto;
-    max-width: 288px;
+    max-width: 28.8rem;
 }
 
 .footer_wrapper_second{
@@ -652,7 +727,7 @@ section{
 .footer_top{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
 }
 
 .footer_top_list{
@@ -661,7 +736,7 @@ section{
 }
 
 .footer_top_list_item{
-    margin-left: 16px;
+    margin-left: 1.6rem;
 }
 
 .footer_top_link{
@@ -691,26 +766,26 @@ section{
   }
 
 .grid{
-    font-size: 30px;
-    margin: 20px auto;
+    font-size: 3rem;
+    margin: 2rem auto;
     display: block; 
-    width: 50px;
-    font-size: 14px;
+    width: 5rem;
+    font-size: 1.4rem;
 
     font-weight: 700;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 76.8rem){
     /*header*/
     .header_wrapper{
-        max-width: 736px;
-        padding: 20px 20px 0px 20px;
+        max-width: 73.6rem;
+        padding: 2rem 2rem 0rem 2rem;
     }
 
     .link_headr{
         text-decoration: none; 
-        font-size: 22.508px;
-        line-height: 45px;
+        font-size: 2.2508rem;
+        line-height: 4.5rem;
         display: flex;
         align-items: center;
     }
@@ -726,53 +801,53 @@ section{
     /*main*/
     /* selector_1*/
     .wrapper_first{
-        max-width: 714px;
-        margin-top: 80px;
-        margin-bottom: 100px;
+        max-width: 71.4rem;
+        margin-top: 8rem;
+        margin-bottom: 10rem;
     }
 
     .wrapper{
-        max-width: 736px;
+        max-width: 73.6rem;
     }
 
     .list_second{
-        width: 202px;
+        width: 20.2rem;
         display: flex;
         flex-direction: column;
     }
 
     .img_second{
-        width: 80px;
-        height: 20px;
-        margin-bottom: 20px;
+        width: 8rem;
+        height: 2rem;
+        margin-bottom: 2rem;
         display: block;
     }
 
     .heading-main{
-        font-size: 52px;
+        font-size: 5.2rem;
         font-weight: 700;
-        line-height: 60px;   
-        margin-bottom: 30px;
+        line-height: 6rem;   
+        margin-bottom: 3rem;
 
-        background-size: 162px 23px;
-        background-position: bottom 0px right 216px;
+        background-size: 16.2rem 2.3rem;
+        background-position: bottom 0rem right 21.6rem;
     }
 
     .p_hero{
-        padding: 0px 150px;
-        margin-bottom: 52px;
+        padding: 0rem 15rem;
+        margin-bottom: 5.2rem;
     }
     .link_start{
-        padding: 12px 36px;
-        border-radius: 16px;
+        padding: 1.2rem 3.6rem;
+        border-radius: 1.6rem;
     }
         /* selector_2*/
     .heading_main_subheadings{
-        font-size: 40px;
+        font-size: 4rem;
         font-weight: 700;
-        line-height: 52px;
-        background-size: 644px 25px;
-        background-position: bottom 0px right 54px;
+        line-height: 5.2rem;
+        background-size: 64.4rem 2.5rem;
+        background-position: bottom 0rem right 5.4rem;
     }
 
     .for_creators{
@@ -782,34 +857,34 @@ section{
     /*selector_3*/
 
     .border_table{
-        width: 664px;
-        padding: 36px;
+        width: 66.4rem;
+        padding: 3.6rem;
     }
     .heading_table{
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
     }
 
     .img_table{
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
         
     }
 
     .listpoint_table_up{
-        padding: 8px 20px 8px 8px;
-        font-size: 16px;
-        line-height: 32px;
-        gap: 12px;
+        padding: 0.8rem 2rem 0.8rem 0.8rem;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        gap: 1.2rem;
 
     }
 
     .listpoint_table_up{
-        padding: 8px 20px 8px 8px;
-        margin-right: 16px;
-        margin-bottom: 16px;
-        border-radius: 12px;
-        gap: 12px;
+        padding: 0.8rem 2rem 0.8rem 0.8rem;
+        margin-right: 1.6rem;
+        margin-bottom: 1.6rem;
+        border-radius: 1.2rem;
+        gap: 1.2rem;
     }
 
     .icon_second{
@@ -823,19 +898,19 @@ section{
     .heading_table_first{
         justify-content: center;
         flex-direction: row;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
     }
 
     .heading_table_first_string{
         align-items: center;
-        margin-right: 12px;
+        margin-right: 1.2rem;
     }
 
     
     .heading_table_text{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     
     }
 
@@ -843,26 +918,26 @@ section{
 
     .card_table_{
         display: flex;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     .card_table{
-        border-radius: 16px;
-        padding: 36px 24px;
-        font-size: 16px;
-        line-height: 28px;
+        border-radius: 1.6rem;
+        padding: 3.6rem 2.4rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
         width: 100%;
     }
 
     .card_table_second{
-        margin-right: 24px;
+        margin-right: 2.4rem;
     }
 
     .heading_table_text{
-        font-size: 22px;
-        line-height: 36px;
-        margin-bottom: 12px;
-        margin-top: 12px;
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
     }
 
     .img_card_table{
@@ -882,19 +957,19 @@ section{
     }
 
     .list_table_down_wrapper{
-        padding: 12px 26px 12px 40px;
-        border-radius: 12px;
-        font-size: 14px;
-        line-height: 24px;
-        margin-right: 20px;
-        width: 112px;
-        height: 32px;
+        padding: 1.2rem 2.6rem 1.2rem 4rem;
+        border-radius: 1.2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-right: 2rem;
+        width: 11.2rem;
+        height: 3.2rem;
     }
     /*selector_4*/
 
     .wrapper_roadmap{
-        max-width: 632px;
-        padding: 36px 52px 52px 52px;
+        max-width: 63.2rem;
+        padding: 3.6rem 5.2rem 5.2rem 5.2rem;
 
     }
 
@@ -903,34 +978,34 @@ section{
     }
 
     .link_rodmap_start{
-        padding: 12px 36px;
-        font-size: 18px;
-        line-height: 36px;
+        padding: 1.2rem 3.6rem;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
         margin: 0;
-        margin-right: 16px;
+        margin-right: 1.6rem;
     }
 
     .link_rodmap{
-        border-radius: 16px;
-        padding: 12px 34px;
-        font-size: 18px;
-        line-height: 36px;
+        border-radius: 1.6rem;
+        padding: 1.2rem 3.4rem;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
     }
 
     .heading_roadmap{
-        font-size: 36px;
-        line-height: 60px;
+        font-size: 3.6rem;
+        line-height: 6rem;
     }
 
     .text_roadmap{
-        font-size: 18px;
-        line-height: 28px;
-        width: 563px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        width: 56.3rem;
     }
 
     .list_roadmap{
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
     }
     /*selector_5*/
 
@@ -939,19 +1014,19 @@ section{
     }
 
     .card{
-        width: 226px;
+        width: 22.6rem;
     }
     .card_text{
-        height: 70px;
+        height: 7rem;
     }
 
     /*selector_6*/
 
     .heading{
-        font-size: 40px;
-        line-height: 52px;
-        background-position: bottom 0px right 233px;
-        background-size: 267px 23px;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        background-position: bottom 0rem right 23.3rem;
+        background-size: 26.7rem 2.3rem;
     }
     .list_up_backed{
         width: 100%;
@@ -967,7 +1042,7 @@ section{
     .footer_wrapper_second{
         display: flex;
         flex-direction: column;
-        max-width: 736px;
+        max-width: 73.6rem;
         margin: 0 auto;
     }
 
@@ -975,36 +1050,36 @@ section{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 32px;
+        padding: 3.2rem;
     }
 
     .footer_bottom_item{
-        margin-right: 44px;
+        margin-right: 4.4rem;
     }
 
     .footer_top_list_item{
-        margin-left: 0px;
+        margin-left: 0rem;
 
-        margin-right: 24px;
+        margin-right: 2.4rem;
     }
 
     /*size_text-img*/
     .footer_top_logo{
-        width: 48px;
-        height: 48px;
+        width: 4.8rem;
+        height: 4.8rem;
     }
     .footer_bottom_item{
-        font-size: 18px;
-        line-height: 36px; 
+        font-size: 1.8rem;
+        line-height: 3.6rem; 
     }
     .footer_top_item_link_icon{
-        width: 28px;
-        height: 28px;
+        width: 2.8rem;
+        height: 2.8rem;
     }
   }
 
 
-  @media screen and (min-width: 1140px){
+  @media screen and (min-width: 114rem){
 
     body{
         background-repeat: no-repeat;
@@ -1013,14 +1088,14 @@ section{
     /*header*/
     .header_wrapper{
         
-        max-width: 1140px;
-        padding: 20px 20px 0px 20px;
+        max-width: 114rem;
+        padding: 2rem 2rem 0rem 2rem;
     }
 
     .link_headr{
         text-decoration: none; 
-        font-size: 28px;
-        line-height: 56px;
+        font-size: 2.8rem;
+        line-height: 5.6rem;
         display: flex;
         align-items: center;
     }
@@ -1035,120 +1110,120 @@ section{
     }
 
     .nav_a{
-        margin-left: 300px;
-        font-size: 18px;
-        line-height: 36px;
+        margin-left: 30rem;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
     }
 
     .nav_button{
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
     /*main*/
     /* selector_1*/
  
 
     .wrapper{
-        max-width: 1138px;;
+        max-width: 113.8rem;;
     }
     .wrapper_first{
-        max-width: 910px;
-        margin-top: 160px;
-        margin-bottom: 200px;
+        max-width: 91rem;
+        margin-top: 16rem;
+        margin-bottom: 20rem;
     }
 
     .heading-main{
-        font-size: 72px;
+        font-size: 7.2rem;
         font-weight: 700;
-        line-height: 80px;   
-        margin-bottom: 30px;
+        line-height: 8rem;   
+        margin-bottom: 3rem;
 
-        background-size: 223px 34px;
-        background-position: bottom 0px right 251px;
+        background-size: 22.3rem 3.4rem;
+        background-position: bottom 0rem right 25.1rem;
     }
 
     .p_hero{
-        padding: 0px 75px;
-        margin-bottom: 80px;
-        font-size: 24px;
-        line-height: 40px;
+        padding: 0rem 7.5rem;
+        margin-bottom: 8rem;
+        font-size: 2.4rem;
+        line-height: 4rem;
     }
     .link_start{
-        padding: 16px 40px;
-        border-radius: 16px;
-        font-size: 20px;
-        line-height: 36px;
+        padding: 1.6rem 4rem;
+        border-radius: 1.6rem;
+        font-size: 2rem;
+        line-height: 3.6rem;
     }
         /* selector_2*/
     .heading_main_subheadings{
-        fongt-size: 48px;
+        fongt-size: 4.8rem;
         font-weight: 700;
-        line-height: 92px;
-        background-size: 773px 30px;
-        background-position: bottom 15px right 180px;
+        line-height: 9.2rem;
+        background-size: 77.3rem 3rem;
+        background-position: bottom 1.5rem right 18rem;
     }
 
     .for_creators{
         display: flex;
-        width: 800px;
+        width: 80rem;
         margin: 0 auto;
     }
     .img_second{
-        width: 96px;
-        height: 24px;
-        margin-bottom: 28px;
+        width: 9.6rem;
+        height: 2.4rem;
+        margin-bottom: 2.8rem;
         display: block;
     }
 
 
     /*selector_3*/
     .border_table{
-        width: 900px;
-        padding: 80px;
+        width: 90rem;
+        padding: 8rem;
     }
 
     .img_table{
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
     }
 
     .heading_table_text{
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 2.8rem;
+        line-height: 3.6rem;
     }
     .list_table_up{
-        width: 701px;
+        width: 70.1rem;
         margin: 0 auto;
     }
     .listpoint_table_up{
-        padding: 8px 20px 8px 8px;
-        border-radius: 12px;
-        margin-right: 24px;
-        margin-bottom: 24px;
-        gap: 12px;
+        padding: 0.8rem 2rem 0.8rem 0.8rem;
+        border-radius: 1.2rem;
+        margin-right: 2.4rem;
+        margin-bottom: 2.4rem;
+        gap: 1.2rem;
     }
 
     .card_table_{
-        width: 781px;
+        width: 78.1rem;
         margin: 0 auto;
     }
 
     .card_table_second{
-        margin-right: 42px;
+        margin-right: 4.2rem;
     }
 
     .card_table{
-        border-radius: 16px;
-        padding: 36px 24px;
-        font-size: 16px;
-        line-height: 28px;
+        border-radius: 1.6rem;
+        padding: 3.6rem 2.4rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
         width: 100%;
     }
     /*selector_4*/
     .wrapper_roadmap{
-        max-width: 1000px;
-        padding: 52px 70px 70px 70px;
-        margin-bottom: 160px;
+        max-width: 100rem;
+        padding: 5.2rem 7rem 7rem 7rem;
+        margin-bottom: 16rem;
 
     }
     
@@ -1157,34 +1232,34 @@ section{
     }
     
     .link_rodmap_start{
-        padding: 16px 40px;
-        font-size: 20px;
-        line-height: 36px;
+        padding: 1.6rem 4rem;
+        font-size: 2rem;
+        line-height: 3.6rem;
         margin: 0;
-        margin-right: 28px;
+        margin-right: 2.8rem;
     }
     
     .link_rodmap{
-        border-radius: 16px;
-        padding: 12px 34px;
-        font-size: 20px;
-        line-height: 36px;
+        border-radius: 1.6rem;
+        padding: 1.2rem 3.4rem;
+        font-size: 2rem;
+        line-height: 3.6rem;
     }
     
     .heading_roadmap{
-        font-size: 40px;
-        line-height: 72px;
+        font-size: 4rem;
+        line-height: 7.2rem;
     }
     
     .text_roadmap{
-        font-size: 20px;
-        line-height: 36px;
-        width: 720px;
+        font-size: 2rem;
+        line-height: 3.6rem;
+        width: 72rem;
     }
     
     .list_roadmap{
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
     }
 
     /*selector_5*/
@@ -1193,28 +1268,28 @@ section{
         display: flex;
     }
     .card_img{
-        width: 350px;
+        width: 35rem;
         
     }
     .card{
-        width: 350px;
+        width: 35rem;
     }
     .card_subheadings{
-        font-size: 15px;
-        line-height: 36px;
+        font-size: 1.5rem;
+        line-height: 3.6rem;
     }
     .card_text{
-        font-size: 20px;
-        line-height: 32px;
-        height: 70px;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        height: 7rem;
     }
     /*selector_6*/
     
     .heading{
-        font-size: 48px;
-        line-height: 92px;
-        background-position: bottom 10px right 396px;
-        background-size: 337px 29px;
+        font-size: 4.8rem;
+        line-height: 9.2rem;
+        background-position: bottom 1rem right 39.6rem;
+        background-size: 33.7rem 2.9rem;
     }
 
     .list_up_backed{
@@ -1224,21 +1299,21 @@ section{
     /*footer_wrapper*/
 
     .footer_wrapper_second{
-        max-width: 1140px;
+        max-width: 114rem;
     }
     /*size_text-img*/
     .footer_top_logo
     {
-        width: 56px;
-        height: 56px;
+        width: 5.6rem;
+        height: 5.6rem;
     }
     .footer_bottom_item{
-        font-size: 20px;
-        line-height: 36px; 
+        font-size: 2rem;
+        line-height: 3.6rem; 
     }
     .footer_top_item_link_icon{
-        width: 32px;
-        height: 32px;
+        width: 3.2rem;
+        height: 3.2rem;
     }
 
   }
