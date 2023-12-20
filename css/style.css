@@ -12,7 +12,7 @@ body{
     color: var(--text--color);
     background-repeat: no-repeat;
     background-image: url(../img/BG\ Stars.png);
-    background-size: 108rem 50rem;
+    background-size: 2500px 600px;
    
 }
 
@@ -72,6 +72,21 @@ h4{
 
 }
 
+.skip_link{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    padding: 10px 15px;
+    color: white;
+    background: grey;
+    transform: translateY(-100%);
+}
+
+.skip_link:focus {
+    transform: translateY(20%);
+    color: white;
+}
 .nav_a{
     margin-left: 9rem;
     font-size: 1.6rem;
@@ -80,7 +95,7 @@ h4{
 }
 
 .nav_a_item{
-    margin-right: 4rem;
+    margin-right: 0.4rem;
 }
 ::selection {
     color: grey; /* Цвет текста */
